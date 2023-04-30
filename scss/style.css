@@ -1,1 +1,300 @@
-/*# sourceMappingURL=style.css.map */
+.overlay-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 991;
+  opacity: 0.9;
+  display: none;
+}
+
+#header .row {
+  padding: 0;
+}
+#header .side-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  height: 100%;
+  width: 300px;
+  display: none;
+}
+#header .side-menu i {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#header .side-menu i:hover {
+  opacity: 0.5;
+}
+#header .side-menu .menu li {
+  border-bottom: 1px solid #ccc;
+}
+#header .side-menu .menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100%;
+}
+#header .side-menu .menu li a:hover {
+  background-color: #E52727;
+  color: white;
+}
+#header .side-menu .logo {
+  border-bottom: 1px solid #ccc;
+}
+#header .upper-navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 990;
+}
+#header .upper-navbar .cart .cart-logo {
+  padding-right: 10px;
+}
+#header .upper-navbar .cart .cart-logo i {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.5);
+}
+#header .upper-navbar .cart .cart-text {
+  cursor: pointer;
+  position: relative;
+}
+#header .upper-navbar .cart .cart-text p {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.5);
+}
+#header .upper-navbar .cart .cart-text .cart-box {
+  position: absolute;
+  background-color: white;
+  width: 310px;
+  top: 75px;
+  right: 0;
+  text-align: center;
+  padding: 30px 35px;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  cursor: default;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product {
+  position: relative;
+  display: flex;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product .product-img {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  width: 200px;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product .product-img a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product .product-text .product-title a {
+  text-decoration: none;
+  color: gray;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product .product-text .product-price {
+  font-weight: 500;
+  font-size: 1.05em;
+}
+#header .upper-navbar .cart .cart-text .cart-box .product .product-remove {
+  border: 1px solid gray;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  color: gray;
+  padding: 0 8px;
+  font-size: 1.2em;
+  position: absolute;
+  scale: 0.8;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+}
+#header .upper-navbar .cart .cart-text .cart-box .subtotal {
+  border-top: 1px solid #ccc;
+  font-size: 1.3em;
+  padding-top: 10px;
+  font-weight: 500;
+}
+#header .upper-navbar .cart .cart-text .cart-box .cart-links a {
+  padding: 10px 0;
+  text-decoration: none;
+  background-color: #E52727;
+  color: white;
+  width: 46%;
+}
+#header .upper-navbar .burger-bar i {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#header .upper-navbar .search-bar {
+  position: relative;
+}
+#header .upper-navbar .search-bar input {
+  border-radius: 10em;
+  padding: 10px 25px;
+  outline: none;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+#header .upper-navbar .search-bar .search-link {
+  border-radius: 10em;
+  padding: 10px 40px;
+  background-color: #E52727;
+  position: absolute;
+  top: 1px;
+  right: 13px;
+}
+#header .lower-navbar {
+  border-top: 1px solid #ccc;
+}
+#header .lower-navbar .category-menu {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#header .lower-navbar .category-menu span {
+  border-radius: 10em;
+  padding: 10px 40px;
+  background-color: #E52727;
+  cursor: pointer;
+}
+#header .lower-navbar .category-menu .menu-box {
+  position: absolute;
+  top: 160px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  width: 260px;
+  padding: 15px 0;
+  display: none;
+}
+#header .lower-navbar .category-menu .menu-box ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 25px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.3s;
+}
+#header .lower-navbar .category-menu .menu-box ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#header .lower-navbar .menu li {
+  padding: 20px 30px 20px 0;
+}
+#header .lower-navbar .menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#header .lower-navbar .menu li a.active, #header .lower-navbar .menu li a:hover {
+  color: #E52727;
+}
+
+#main {
+  padding-top: 68px;
+}
+#main .space {
+  height: 100vh;
+  background-color: aqua;
+}
+
+#footer .upper-footer {
+  background-color: #212121;
+  padding: 75px 0 80px;
+}
+#footer .upper-footer p,
+#footer .upper-footer li a {
+  color: #808080;
+  text-decoration: none;
+}
+#footer .upper-footer .w-95 {
+  width: 95%;
+  margin: auto;
+}
+#footer .upper-footer .column h5 {
+  color: white;
+  padding-bottom: 10px;
+}
+#footer .upper-footer .column .post {
+  display: flex;
+  padding-top: 12px;
+}
+#footer .upper-footer .column .post .post-img img {
+  width: 200px;
+  padding-top: 3px;
+}
+#footer .upper-footer .column .post .post-text .post-title a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+}
+#footer .upper-footer .column .post .post-text .post-title a:hover {
+  color: #E52727;
+}
+#footer .upper-footer .column .post .post-text .post-date {
+  color: #808080;
+  font-size: 0.8em;
+}
+#footer .upper-footer .column ul {
+  line-height: 35px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#footer .upper-footer .column ul li a:hover {
+  color: #E52727;
+}
+#footer .upper-footer .column .socials a {
+  color: white;
+  margin-left: 10px;
+  background-color: #333333;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#footer .upper-footer .column .socials a:hover {
+  color: #E52727;
+}
+#footer .lower-footer {
+  background-color: #333333;
+}
+#footer .lower-footer .cards {
+  width: 300px;
+}
+#footer .lower-footer .cards li {
+  padding: 20px 10px;
+}
+#footer .lower-footer .cards li a {
+  display: inline-block;
+  filter: grayscale(1);
+}
+#footer .lower-footer .cards li a:hover {
+  filter: grayscale(0);
+}
+
+@media (min-width: 992px) {
+  #header .upper-navbar {
+    position: static;
+  }
+  #main {
+    padding-top: 0;
+  }
+  #footer .lower-footer .cards li {
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */
