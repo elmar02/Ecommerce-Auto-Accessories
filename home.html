@@ -18,7 +18,11 @@
 </head>
 
 <body>
-    <div id="top" class="overlay-body"></div>
+    <div class="overlay-body"></div>
+    <div class="loading">
+        <img class="spedometer" src="images/static/preloader.gif" alt="">
+    </div>
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
     <header id="header">
         <div class="upper-navbar">
             <div class="container">
@@ -118,15 +122,29 @@
             </div>
         </div>
     </header>
+    <main id="main">
+        <section id="breadcrumbs">
+            <div class="container text-center">
+                <h1>Bloq</h1>
+                <div class="path d-md-block d-none">
+                    <a href="home.html">Ana Səhifə</a>
+                    <span>»</span>
+                    <span>Bloq</span>
+                </div>
+            </div>
+        </section>
+        <div class="space"></div>
+    </main>
     <footer id="footer">
         <div class="upper-footer">
-            <div class="w-95">
+            <div class="container">
                 <div class="row">
                     <div class="column pt-3 col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="logo pb-2 pe-5">
                             <a href=""><img src="images/static/logo-alt.png" alt="" class="img-fluid"></a>
                         </div>
-                        <p class="py-3">Bu uzun bir həqiqətdir ki, oxucu səhifəyə daxil olduqda məzmun verir. Lorem Ipsum-dan istifadənin məqsədi onun olmasıdır</p>
+                        <p class="py-3">Bu uzun bir həqiqətdir ki, oxucu səhifəyə daxil olduqda məzmun verir. Lorem
+                            Ipsum-dan istifadənin məqsədi onun olmasıdır</p>
                         <div class="socials row">
                             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                             <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -147,10 +165,12 @@
                         <h5 class="title">Ən Son Paylaşımlar</h5>
                         <div class="post pb-3">
                             <div class="post-img p-0">
-                                <a href="#"><img src="images/static/automotive-car-coupe-dashboard-498694-80x80.jpg" alt="" class="img-fluid"></a>
+                                <a href="#"><img src="images/static/automotive-car-coupe-dashboard-498694-80x80.jpg"
+                                        alt="" class="img-fluid"></a>
                             </div>
                             <div class="post-text ps-3 row align-items-center text-start">
-                                <div class="post-title"><a href="#">Elektrikli maşınlar düşündüyünüz qədər sağlam deyil</a></div>
+                                <div class="post-title"><a href="#">Elektrikli maşınlar düşündüyünüz qədər sağlam
+                                        deyil</a></div>
                                 <div class="post-date py-1">
                                     Aprel 20, 2023
                                 </div>
@@ -158,40 +178,48 @@
                         </div>
                         <div class="post">
                             <div class="post-img p-0">
-                                <a href="#"><img src="images/static/parked-white-coupe-during-night-3354648-80x80.jpg" alt="" class="img-fluid"></a>
+                                <a href="#"><img src="images/static/parked-white-coupe-during-night-3354648-80x80.jpg"
+                                        alt="" class="img-fluid"></a>
                             </div>
                             <div class="post-text ps-3 row align-items-center align-content-start text-start">
-                                <div class="post-title"><a href="#">Avtomobillerin nece işə düşdüyünü bilirsənmi?</a></div>
+                                <div class="post-title"><a href="#">Avtomobillerin nece işə düşdüyünü bilirsənmi?</a>
+                                </div>
                                 <div class="post-date py-1">
                                     Aprel 19, 2023
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column pt-3 col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="column last pt-3 col-12 col-md-6 col-lg-4 col-xl-3">
                         <h5 class="title">Xəbərlər</h5>
+                        <p>Xəbərlərimizə abunə olun və növbəti ödəniş üçün bonus əldə edin</p>
+                        <input type="text" placeholder="Elektron poçtunuz" class="rounded-5 w-100 mt-3">
+                        <a href="" class="rounded-5 w-100 text-center mt-3">Abunə ol</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="lower-footer px-3 d-flex justify-content-between align-items-center">
-            <div class="copyright text-white opacity-75">
-                <p class="m-0">Copyright © 2023 Sayara. Bütün hüquqlar Wild Team tərəfindən qorunur.</p>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="copyright text-white opacity-75">
+                        <p class="m-0">Copyright © 2023 Sayara. Bütün hüquqlar Wild Team tərəfindən qorunur.</p>
+                    </div>
+                    <ul
+                        class="cards list-unstyled row p-0 m-0 align-items-center justify-content-center justify-content-md-end">
+                        <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/mastercard.png" alt=""
+                                    class="img-fluid"></a></li>
+                        <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/visa.png" alt=""
+                                    class="img-fluid"></a></li>
+                        <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/jcb.png" alt=""
+                                    class="img-fluid"></a></li>
+                        <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/discover.png" alt=""
+                                    class="img-fluid"></a></li>
+                        <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/paypal.png" alt=""
+                                    class="img-fluid"></a></li>
+                    </ul>
+                </div>
             </div>
-            <ul
-                class="cards list-unstyled row p-0 m-0 align-items-center justify-content-center justify-content-md-end">
-                <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/mastercard.png" alt=""
-                            class="img-fluid"></a></li>
-                <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/visa.png" alt=""
-                            class="img-fluid"></a></li>
-                <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/jcb.png" alt=""
-                            class="img-fluid"></a></li>
-                <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/discover.png" alt=""
-                            class="img-fluid"></a></li>
-                <li class="col-4 col-sm-3 col-md-2"><a href="#"><img src="images/static/paypal.png" alt=""
-                            class="img-fluid"></a></li>
-            </ul>
-        </div>
         </div>
     </footer>
 </body>

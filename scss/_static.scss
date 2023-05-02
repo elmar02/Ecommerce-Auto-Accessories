@@ -9,7 +9,53 @@
     opacity: 0.9;
     display: none;
 }
-
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    transition: 0.3s ease;
+    &.loaded{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .spedometer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 220px;
+    }
+}
+.up{
+    position: fixed;
+    background-color: $color1;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    z-index: 998;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.2em;
+    right: 30px;
+    bottom: 80px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+body{
+    overflow: hidden;
+}
 #header {
 
     .row {
@@ -255,10 +301,26 @@
 
 #main {
     padding-top: 68px;
-
-    .space {
-        height: 100vh;
-        background-color: aqua;
+    .space{
+        height: 1000vh;
+    }
+    #breadcrumbs{
+        padding: 70px 0;
+        background-image: url(/images/static/breadcrumbs.jpg);
+        h1{
+            color: white;
+            font-weight: 900;
+        }
+        .path{
+            padding-top: 10px;
+            a{
+                text-decoration: none;
+                color: $color1;
+            }
+            span{
+                color: white;
+            }
+        }
     }
 }
 
@@ -266,16 +328,13 @@
     .upper-footer {
         background-color: #212121;
         padding: 75px 0 80px;
-
+        .logo{
+            width: 300px;
+        }
         p,
         li a {
             color: #808080;
             text-decoration: none;
-        }
-
-        .w-95 {
-            width: 95%;
-            margin: auto;
         }
 
         .column {
@@ -283,7 +342,21 @@
                 color: white;
                 padding-bottom: 10px;
             }
-
+            &.last{
+                padding-right: 50px;
+                input{
+                    outline: none;
+                    border: none;
+                    padding: 10px 18px;
+                }
+                a{
+                    background-color: $color1;
+                    text-decoration: none;
+                    color: white;
+                    display: inline-block;
+                    padding: 10px 0;
+                }
+            }
             .post {
                 display: flex;
                 padding-top: 12px;
@@ -367,6 +440,17 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #main{
+        #breadcrumbs{
+          padding: 130px 0;
+          h1{
+            font-size: 3em;
+          }
         }
     }
 }

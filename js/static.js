@@ -21,3 +21,19 @@ $(".overlay-body").click(function() {
 $("#header .category-menu").click(function () {
     $("header .menu-box").toggle();
 })
+
+let loading = document.querySelector(".loading");
+let up = document.querySelector(".up");
+window.addEventListener("load",function(){
+    loading.classList.add("loaded");
+    document.querySelector("body").style = "overflow: auto;"
+})
+
+window.addEventListener("scroll",function(){
+    if(window.pageYOffset>400) up.classList.add("active");
+    else up.classList.remove("active");
+})
+
+up.addEventListener("click",function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
