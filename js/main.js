@@ -5,3 +5,4 @@ function callAll(jsfiles) {
   document.getElementsByTagName("head")[0].appendChild(src);
 }
 callAll("./js/static.js");
+callAll("./js/shop.js");
