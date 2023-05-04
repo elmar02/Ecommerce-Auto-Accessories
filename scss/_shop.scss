@@ -177,9 +177,23 @@
             border-radius: 10px;
             box-shadow: 0 1px 10px 0px rgba(0, 0, 0, .05);
             .product-img{
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 img{
                     border-radius: 10px;
+                }
+                i{
+                    position: absolute;
+                    top: 15px;
+                    right: -20px;
+                    transition: 0.3s
+                }
+                &:hover{
+                    i{
+                        right: 10px;
+                    }
                 }
             }
             .product-data{

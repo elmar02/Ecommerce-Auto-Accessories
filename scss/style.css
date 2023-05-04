@@ -163,10 +163,22 @@
   box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.05);
 }
 #shop-section .product-area .product-item .product-img {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #shop-section .product-area .product-item .product-img img {
   border-radius: 10px;
+}
+#shop-section .product-area .product-item .product-img i {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  transition: 0.3s;
+}
+#shop-section .product-area .product-item .product-img:hover i {
+  right: 10px;
 }
 #shop-section .product-area .product-item .product-data {
   padding: 25px 20px;
