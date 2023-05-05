@@ -1,3 +1,78 @@
+#contact-1 {
+  width: 100%;
+  padding: 40px 0 100px;
+}
+#contact-1 .text .txt-1 {
+  text-align: center;
+}
+#contact-1 .text .txt-1 p {
+  color: gray;
+}
+#contact-1 .boxes .form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#contact-1 .boxes .form input {
+  margin-block: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+#contact-1 .boxes .form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: 0px;
+  outline: none;
+}
+#contact-1 .boxes .form .inp1 {
+  border-radius: 30px;
+  width: 45%;
+}
+#contact-1 .boxes .form .inp2 {
+  border-radius: 30px;
+  width: 45%;
+}
+#contact-1 .boxes .form .inp3 {
+  border-radius: 30px;
+  width: 100%;
+}
+#contact-1 .boxes .form #message {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-block: 10px;
+}
+#contact-1 .boxes .form textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: 0px;
+  outline: none;
+}
+#contact-1 .boxes .form button {
+  background-color: #E52727;
+  padding: 10px 3rem;
+  outline: none;
+  outline-offset: 0px;
+  border-radius: 30px;
+  color: white;
+  margin-block: 10px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #contact-1 .text .txt-1 {
+    margin: auto;
+    width: 400px;
+  }
+  #contact-1 .boxes .map, #contact-1 .boxes .contact {
+    width: 48%;
+  }
+  #contact-1 .boxes .map iframe {
+    height: 100%;
+  }
+}
 .userSelectDisable {
   -webkit-user-select: none;
      -moz-user-select: none;
